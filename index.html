@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burton Home Page</title>
+    <link rel="stylesheet" href="./Clock/Clock.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Burton Home Page
+    </h1>
+<!--
+    The below section runs the clock.  Using the clock.css and clock.js
+-->
+<header>
+    <div class="clock">
+        <span class="clock-time"></span>
+        <span class="clock-ampm"></span>    
+    </div>
+
+<!-- 
+    Display the countdown timer in an element 
+-->
+    <div class="countdown">
+        
+        <p id="demo"></p>  until the Compleation of Book Camp!
+    </div>
+</header>
+<main>
+    <img src="https://picsum.photos/1400/400" >
+</main>
+<!-- the DIV that will contain the widget -->
+
+
+    <div class="weatherWidget" ></div>
+
+    <footer>    
+        <script>
+             window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+             window.weatherWidgetConfig.push({
+                selector:".weatherWidget",
+                apiKey:"7NJNJZRPV5N2UZQ3R44EPJ7SK", //Sign up for your personal key
+                location:"Mankato, MN", //Enter an address
+                unitGroup:"us", //"us" or "metric"
+                forecastDays:5, //how many days forecast to show
+                title:"Mankato, MN", //optional title to show in the 
+                showTitle:true, 
+                showConditions:true
+            });
+  
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    </footer>
+    <script src="./Clock/Clock.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
