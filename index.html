@@ -9,29 +9,45 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>
-        Burton Home Page
-    </h1>
-<!--
-    The below section runs the clock.  Using the clock.css and clock.js
--->
-<header>
-    <div class="clock">
-        <span class="clock-time"></span>
-        <span class="clock-ampm"></span>    
-    </div>
+    <header class="title">
+        <h1>
+            Burton Home Page
+        </h1>
+    </header>
 
-<!-- 
-    Display the countdown timer in an element 
--->
-    <div class="countdown">
-        
-        <p id="demo"></p>  until the Compleation of Book Camp!
-    </div>
-</header>
-<main>
-    <img src="https://picsum.photos/1400/400" >
-</main>
+    <main>
+        <div class="sidebar">
+            <!--
+                The below section runs the clock.  Using the clock.css and clock.js
+            -->
+
+            <div class="clock">
+                <span class="clock-time"></span>
+                <span class="clock-ampm"></span>    
+            </div>
+
+            <!-- 
+            Display the countdown timer in an element 
+            -->
+            <div class="countdown">
+                
+                <p id="demo"></p>  until Raine's Graduation!
+            </div>
+            <div class="calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&showTitle=0&showPrint=0&src=YXJyaWFnYTg2LmJ1cnRvbjc4QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+            </div> 
+        </div>
+        <div class="mainsection">
+            <div>
+            <img src="https://picsum.photos/1400/400" >
+            </div>
+            <div class="news">
+                <rssapp-list id="_fj5NwKsEz99l34Ks"></rssapp-list><script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script>
+            </div>
+        </div>
+    </main>
+  
+
 <!-- the DIV that will contain the widget -->
 
 

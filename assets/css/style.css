@@ -1,17 +1,17 @@
 .clock {
-    position: relative;
-    float: right;
+    margin: 20px auto;
+    
 }
 
 .countdown {
     background: #333333;
     width: 250px;
+    margin: 20px auto;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     color: #eeeeee;
-    position: relative;
-    float: left;
+    
 }
 
 .weatherWidget {
@@ -24,6 +24,7 @@ header {
 }
 main {
     align-items: center Z;
+    display: flex;
 }
 h1 {
     text-align: center;
