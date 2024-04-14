@@ -29,3 +29,21 @@ main {
 h1 {
     text-align: center;
 }
+
+.mainsection {
+    padding: 20px;
+    margin:  0 auto;
+}
+
+.sidebar {
+ width: 500px;
+}
+
+.news {
+    width: 500px;
+}
+
+.calendar {
+    padding: 50px;
+    margin: 0 auto;
+}
