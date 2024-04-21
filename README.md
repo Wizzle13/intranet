@@ -17,3 +17,9 @@ Badges to be added to Github and projects
 News Feeds
 
 https://rss.app/
+
+docker commands to rebuild image
+
+    docker build -t home_intranet .
+    docker tag home_intranet wizzle1313/home_intranet
+    docker push wizzle1313/home_intranet
