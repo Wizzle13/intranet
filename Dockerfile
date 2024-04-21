@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM  --platform=linux/arm/v7 nginx:alpine
 COPY . /usr/share/nginx/html
 EXPOSE 80
 
